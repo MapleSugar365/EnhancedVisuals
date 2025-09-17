@@ -8,14 +8,18 @@ import net.minecraft.world.level.Explosion;
 
 @Mixin(Explosion.class)
 public interface ExplosionAccessor {
-	@Accessor("x")
-	double getX();
-	@Accessor("y")
-	double getY();
-	@Accessor("z")
-	double getZ();
-	@Accessor
-	float getRadius();
-	@Accessor
-	Entity getSource();
+    @Accessor("x")
+    double eh$getX();
+    
+    @Accessor("y")
+    double eh$getY();
+    
+    @Accessor("z")
+    double eh$getZ();
+    
+    @Accessor("radius")
+    float eh$getRadius();
+    
+    @Accessor("source")
+    Entity eh$getSource();
 }
